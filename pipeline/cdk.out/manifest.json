@@ -1,0 +1,62 @@
+{
+  "version": "14.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "PipelineStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "PipelineStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/PipelineStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/cameronbeeler/DEV/AWS/cdk/pipeline/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/cameronbeeler/DEV/AWS/cdk/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/cameronbeeler/DEV/AWS/cdk/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/cameronbeeler/DEV/AWS/cdk/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/cameronbeeler/DEV/AWS/cdk/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/cameronbeeler/DEV/AWS/cdk/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/cameronbeeler/DEV/AWS/cdk/pipeline/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/cameronbeeler/DEV/AWS/cdk/pipeline/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (/Users/cameronbeeler/DEV/AWS/cdk/pipeline/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/PipelineStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/cameronbeeler/DEV/AWS/cdk/pipeline/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/cameronbeeler/DEV/AWS/cdk/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/cameronbeeler/DEV/AWS/cdk/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/cameronbeeler/DEV/AWS/cdk/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/cameronbeeler/DEV/AWS/cdk/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/cameronbeeler/DEV/AWS/cdk/pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/cameronbeeler/DEV/AWS/cdk/pipeline/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/cameronbeeler/DEV/AWS/cdk/pipeline/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (/Users/cameronbeeler/DEV/AWS/cdk/pipeline/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "PipelineStack"
+    }
+  }
+}
